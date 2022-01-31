@@ -15,6 +15,7 @@ In order to compare the performance of each algorithm we have defined the follow
 * **Task Success Rate:** The percentage of the tasks that finish their execution over the total. A task is not considered to complete its execution correctly if its execution time exceeds its deadline or if the offloading process fails. This metric is one of the most important for the evaluation process.
 * **Average Total Time:** The total time required to complete successfully a task, which includes the execution time and the time to send the task to the processing node. This metric is especially useful for comparing the latency incurred by each algorithm.
 * **Average Real Total Time:** Same as **Average Total Time** but also considering the time wasted on tasks that were not executed successfully.
+* **Failed tasks due to latency:** The number of tasks that have failed because their execution time exceeds their maximum allowed latency.
 * **Average CPU Usage per device:** Average CPU usage of a device. Useful to determine how much the computational resources of the devices are used.
 * **Average Energy Consumption per Device:** Average power consumption of one device. 
 
@@ -23,10 +24,10 @@ In order to compare the performance of each algorithm we have defined the follow
 
 TODO
 
-| Tasks Success Rate | Average Total Time | Average Real Total Time | Average CPU Usage per device | Average Energy Consumption per Device |
-|---|---|---|---|---|
-| ![TasksSuccessRate](TasksSuccessRate.png) | ![AvgTotalTime](AvgTotalTime.png) | ![AvgRealTotalTime](AvgRealTotalTime.png) | ![AvgVMCPUUsage](AvgVMCPUUsage.png) | ![AvgEnergyConsumptionPerDevice](AvgEnergyConsumptionPerDevice.png) |
-| TODO | TODO | TODO | TODO | TODO |
+| Tasks Success Rate | Average Total Time | Average Real Total Time | Failed tasks due to latency | Average CPU Usage per device | Average Energy per Device |
+|---|---|---|---|---|---|
+| ![TasksSuccessRate](TasksSuccessRate.png) | ![AvgTotalTime](AvgTotalTime.png) | ![AvgRealTotalTime](AvgRealTotalTime.png) | ![AvgRealTotalTime](TasksFailedDueDelay.png) | ![AvgVMCPUUsage](AvgVMCPUUsage.png) | ![AvgEnergyConsumptionPerDevice](AvgEnergyConsumptionPerDevice.png) |
+| TODO | TODO | TODO | TODO | TODO | TODO |
 
 TODO
 
