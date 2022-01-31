@@ -3,11 +3,12 @@ A multi-layer guided reinforcement learning-based tasks offloading in edge compu
 
 # Table of contents
 - [Metrics](#metrics)
-- [Experimental Results and Analysis](#experimental-results-and-analysis)
+- [Compared Methods](#compared-methods)
 - [Preview of the simulations](#preview-of-the-simulations)
   - [Greedy algorithm](#greedy-algorithm)
   - [Local Reinforcement Learning algorithm](#local-reinforcement-learning-algorithm)
   - [Multi-Layer Reinforcement Learning algorithm](#multi-layer-reinforcement-learning-algorithm)
+- [Experimental Results and Analysis](#experimental-results-and-analysis)
 
 # Metrics
 In order to compare the performance of each algorithm we have defined the following benchmark metrics:
@@ -20,16 +21,35 @@ In order to compare the performance of each algorithm we have defined the follow
 * **Average Energy Consumption per Device:** Average power consumption of one device. 
 
 
-# Experimental Results and Analysis
+# Compared Methods
+We have implemented in the simulator the three algorithms proposed in this article to evaluate their performance. The greedy solution will serve as a reference for comparison with the single-layer reinforcement learning algorithm and our proposed multi-layer guided RL.
+The parameters used by the heuristic of the greedy algorithm are:
 
-TODO
+| Greedy Algorithm Parameter | Value |
+|-------------------------------------|----------------|
+| Nearest device weighing α    | 1.1            |
+| Edge server weighing β        | 1.5            |
+| Cloud weighing γ             | 1.8            |
+| CPU trade-off δ              | 20             |
 
-| Tasks Success Rate | Average Total Time | Average Real Total Time | Failed tasks due to latency | Average CPU Usage per device | Average Energy per Device |
-|---|---|---|---|---|---|
-| ![TasksSuccessRate](TasksSuccessRate.png) | ![AvgTotalTime](AvgTotalTime.png) | ![AvgRealTotalTime](AvgRealTotalTime.png) | ![AvgRealTotalTime](TasksFailedDueDelay.png) | ![AvgVMCPUUsage](AvgVMCPUUsage.png) | ![AvgEnergyConsumptionPerDevice](AvgEnergyConsumptionPerDevice.png) |
-| TODO | TODO | TODO | TODO | TODO | TODO |
 
-TODO
+On the other hand, we designed three methods based on the implementations of the reinforcement learning solutions explained in previous sections.
+The first one is the basic implementation of a reinforcement learning algorithm that runs locally on each device without external knowledge, in the tests we will denote it as *Local RL*.
+
+The second and third methods are the same implementation of the multi-layer RL algorithm but with different initial conditions. The *RL Multilayer Empty* version starts each simulation with all Q-Tables (knowledge) of the devices completely empty, while *RL Multilayer}* version uses on the fog servers the Q-Table resulting from the previous simulations, with the same configuration, to simulate the behaviour of a system that starts with knowledge to improve initial performance.
+The parameters used by both methods are summarised in the following table:
+
+| Parameter / RL Algorithm         | Single | Multi |
+|----------------------------------|--------|-------|
+| Learning rate α          | 0.6    | 0.6   |
+| Latency-Energy Trade-off β | 0.003  | 0.003 |
+| Discount factor γ         | 0.3    | 0.3   |
+| Failure penalty δ         | 1000   | 1000  |
+| Average CPU refresh rate         | 60s    | 60s   |
+| Query reward factor ρ      | -      | 0.2   |
+| Query use penalty ω      | -      | 10    |
+| Initial Q-Value                  | 200    | 200   |
+| Initial Query Q-Value            | -      | 10    |
 
 # Preview of the simulations
 Examples of some simulations performed for different number of devices and algorithms.
@@ -48,3 +68,15 @@ Example of local knowledge RL algorithm with 160 devices and random mobility.
 Example of the multi-layer extension of the RL algorithm with 160 devices and random mobility.
 
 ![MultiLayer](Simulation%20Previews/RL_ML_Empty_160.gif)
+
+
+# Experimental Results and Analysis
+
+Each of the figures represents the metrics that were defined to make the comparison between algorithms from a scenario with 10 devices up to 200 and the value will be the average obtained by repeating the same simulation 10 times.
+
+| Tasks Success Rate | Average Total Time | Average Real Total Time | Failed tasks due to latency | Average CPU Usage per device | Average Energy per Device |
+|---|---|---|---|---|---|
+| ![TasksSuccessRate](TasksSuccessRate.png) | ![AvgTotalTime](AvgTotalTime.png) | ![AvgRealTotalTime](AvgRealTotalTime.png) | ![AvgRealTotalTime](TasksFailedDueDelay.png) | ![AvgVMCPUUsage](AvgVMCPUUsage.png) | ![AvgEnergyConsumptionPerDevice](AvgEnergyConsumptionPerDevice.png) |
+| TODO | TODO | TODO | TODO | TODO | TODO |
+
+TODO
