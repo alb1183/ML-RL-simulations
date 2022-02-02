@@ -74,9 +74,23 @@ Example of the multi-layer extension of the RL algorithm with 160 devices and ra
 
 Each of the figures represents the metrics that were defined to make the comparison between algorithms from a scenario with 10 devices up to 200 and the value will be the average obtained by repeating the same simulation 10 times.
 
-| Tasks Success Rate | Average Total Time | Average Real Total Time | Failed tasks due to latency | Average CPU Usage per device | Average Energy per Device |
-|---|---|---|---|---|---|
-| ![TasksSuccessRate](TasksSuccessRate.png) | ![AvgTotalTime](AvgTotalTime.png) | ![AvgRealTotalTime](AvgRealTotalTime.png) | ![AvgRealTotalTime](TasksFailedDueDelay.png) | ![AvgVMCPUUsage](AvgVMCPUUsage.png) | ![AvgEnergyConsumptionPerDevice](AvgEnergyConsumptionPerDevice.png) |
-| TODO | TODO | TODO | TODO | TODO | TODO |
+| Tasks Success Rate | Average Total Time | Average Real Total Time | 
+|---|---|---|
+| ![TasksSuccessRate](TasksSuccessRate.png) | ![AvgTotalTime](AvgTotalTime.png) | ![AvgRealTotalTime](AvgRealTotalTime.png) |
+| One of the most critical results is the success rate in task execution, since in practice this has the most negative impact on the end-user. | TODO | TODO |
+
+| Failed tasks due to latency | Average CPU Usage per device | Average Energy per Device |
+|---|---|---|
+| ![AvgRealTotalTime](TasksFailedDueDelay.png) | ![AvgVMCPUUsage](AvgVMCPUUsage.png) | ![AvgEnergyConsumptionPerDevice](AvgEnergyConsumptionPerDevice.png) |
+| TODO | TODO | TODO |
+
+The multi-layer method offers superior real-time performance and rate of convergence to single-layer even in the version that starts without initial knowledge as shown in the simulation examples in following figures. The single-layer method provides initially low performance that slowly converges to the best possible at the end of the simulation.
+However, the multi-layer method quickly achieves the best success rate of the single-layer method, due to the offloading query, to slowly improve the success rate by itself.
+In addition, the multi-layer method that starts from the Q-tables of the fog agents learned in previous simulations directly achieves the best result and maintains it throughout the simulation.
+
+| Success Rate Evolution 70 devices | Success Rate Evolution 170 devices |
+|---|---|
+| ![ExampleTasksSuccessRateEvolution70devices](ExampleTasksSuccessRateEvolution70devices.png) | ![ExampleTasksSuccessRateEvolution70devices](ExampleTasksSuccessRateEvolution170devices.png) |
+| TODO | TODO |
 
 TODO
