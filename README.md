@@ -12,7 +12,7 @@ A multi-layer guided reinforcement learning-based tasks offloading in edge compu
 - [Experimental Results and Analysis](#experimental-results-and-analysis)
 
 # Experiment Setup
-The evaluation has been performed on a modified version of PureEdgeSim edge computing simulator, the source code of our extension is available on TODO.
+The evaluation has been performed on a modified version of [PureEdgeSim](https://github.com/CharafeddineMechalikh/PureEdgeSim) edge computing simulator, the source code of our extension is available on [GitHub](https://github.com/alb1183/PureEdgeSim).
 We have improved the functionality of the simulator to meet our requirements, including new performance metrics and reinforcement learning algorithms.
 The simulator runs in a Java 1.8 environment and on a computer with an AMD Ryzen 9 5900X and 32GB of DDR4 RAM. 
 
@@ -150,4 +150,11 @@ In addition, the multi-layer method that starts from the Q-tables of the fog age
 | ![ExampleTasksSuccessRateEvolution70devices](ExampleTasksSuccessRateEvolution70devices.png) | ![ExampleTasksSuccessRateEvolution70devices](ExampleTasksSuccessRateEvolution170devices.png) |
 | Simulation data source: <br/> [RL Local](Simulations/Simulation%208/simulation/iteration_27__Orchestration%20algorithm%3D%20RL_MULTILAYER_DISABLED%20-%20%20Architechitecture%3D%20ALL%20-%20%20number%20of%20edge%20devices%3D%2070_final.png) <br/>[RL Multi Empty](Simulations/Simulation%208/simulation/iteration_47__Orchestration%20algorithm%3D%20RL_MULTILAYER_EMPTY%20-%20%20Architechitecture%3D%20ALL%20-%20%20number%20of%20edge%20devices%3D%2070_final.png)<br/> [RL Multi](Simulations/Simulation%208/simulation/iteration_67__Orchestration%20algorithm%3D%20RL_MULTILAYER%20-%20%20Architechitecture%3D%20ALL%20-%20%20number%20of%20edge%20devices%3D%2070_final.png) | Simulation data source:<br/> [RL Local](Simulations/Simulation%208/simulation/iteration_37__Orchestration%20algorithm%3D%20RL_MULTILAYER_DISABLED%20-%20%20Architechitecture%3D%20ALL%20-%20%20number%20of%20edge%20devices%3D%20170_final.png) <br/>[RL Multi Empty](Simulations/Simulation%208/simulation/iteration_57__Orchestration%20algorithm%3D%20RL_MULTILAYER_EMPTY%20-%20%20Architechitecture%3D%20ALL%20-%20%20number%20of%20edge%20devices%3D%20170_final.png) <br/>[RL Multi](Simulations/Simulation%208/simulation/iteration_77__Orchestration%20algorithm%3D%20RL_MULTILAYER%20-%20%20Architechitecture%3D%20ALL%20-%20%20number%20of%20edge%20devices%3D%20170_final.png) |
 
-TODO
+
+
+After having seen the performance of the algorithms in different simulator scenarios, we can conclude that the greedy algorithm offers acceptable performance in low and medium device density scenarios.
+However, as device density increases, more complex methods must be applied to maintain system performance.
+Reinforcement learning algorithms are able to adapt to complex scenarios at a low computational cost, thus providing the best results in simulations.
+Furthermore, our multi-layer approach stands out from other methods because in complex high-density scenarios it shows high performance in the most important metrics.
+This improvement is due to enhanced offloading decision system by using external knowledge and serves as evidence of the good performance of our multi-layer RL proposal.
+Therefore, reinforcement learning algorithms are good methods for solving the task assignment problem and our proposal is a useful and easily applicable extension to any RL algorithm to improve its performance.
