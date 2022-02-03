@@ -28,20 +28,43 @@ The maximum range of the wireless connection of the edge devices is 40 metres.
 
 The simulation parameters of the PureEdgeSim environment are summarised in the following table:
 
-TODO
+| Simulation Parameter  | Value       |
+|--------------------------------|----------------------|
+| Simulation duration            | 10 min               |
+| Number of averaged simulations | 10 per configuration |
+| Min number of edge devices     | 10                   |
+| Max number of edge devices     | 200                  |
+| Simulation area                | 200m x 200m   |
+| Edge and Fog Bandwidth         | 100 Mbps             |
+| Cloud Bandwidth                | 20 Mbps              |
+| Edge devices range             | 40 meters            |
 
 
 All devices with the exception of sensors have enough computing capacity to receive and process tasks, so sensors do not have the functionality to perform local offloading or to receive tasks from other devices.
 Among the edge devices only sensors and smartphones generate tasks in the system.
 The characteristics of the devices that compose the proposed three-layer architecture are: 
 
-TODO
+| Devices type   | Cloud Datacenter | Edge Datacenter | Smartphone | Raspberry | Laptop | Sensor |
+|-------------------------|---------------------------|--------------------------|---------------------|--------------------|-----------------|-----------------|
+| Layer                   | Cloud                     | Fog                      | Edge                | Edge               | Edge            | Edge            |
+| Number of devices       | 1                         | 4                        | 30%                 | 10%                | 20%             | 40%             |
+| CPU cores               | 8                         | 8                        | 8                   | 4                  | 8               | -               |
+| MIPS                    | 2000000                   | 1000000                  | 25000               | 16000              | 110000          | -               |
+| Generate Tasks          | -                         | -                        | Yes                 | No                 | No              | Yes             |
+| Idle consumption (Wh/s) | 0.00015                   | 0.00015                  | 0.078               | 1.6                | 1.7             | 0.0011          |
+| Max consumption (Wh/s)  | 0.016                     | 0.016                    | 3.3                 | 5.1                | 23.6            | 0.036           |
+
 
 
 To test the behaviour of the offloading algorithms, three applications with specific latency and computational requirements are simulated. 
 The following table shows the percentage of usage on each device and the specifications of each application.
 
-TODO
+|                          | Augmented Reality             | Health App | Data Processing |
+|--------------------------|-------------------------------|--------|-------|
+| Usage Percentage         | 20                            | 25     | 30    |
+| Generation Rate (task/m) | 45                            | 35     | 45    |
+| Maximum Delay (s)        | 6                             | 30     | 10    |
+| Task Length (MI)         | 120000                        | 600000 | 18000 |
 
 
 # Metrics
