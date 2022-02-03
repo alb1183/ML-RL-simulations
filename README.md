@@ -17,21 +17,21 @@ A multi-layer guided reinforcement learning-based tasks offloading in edge compu
 TODO
 
     .
-    ├── Average                              # TODO
-    │   └── Final results/Algorithms         # TODO
-    │      ├── CPU Utilization               # TODO
-    │      ├── Delays                        # TODO
-    │      ├── Energy                        # TODO
-    │      ├── Network                       # TODO
-    │      └── Tasks                         # TODO
-    ├── QTables                              # TODO
-    ├── Simulation Previews                  # TODO
-    └── Simulations                          # TODO
-        ├── Simulation 1                     # TODO
-        ├── ....                             # TODO
-        └── Simulation 10                    # TODO
-           ├── Final results/Algorithms      # TODO
-           └── simulation                    # TODO
+    ├── Average                              # CSV data from all the simulations
+    │   └── Final results/Algorithms         # Graphs of each metric calculated as the average of 10 simulations
+    │      ├── CPU Utilization               # 
+    │      ├── Delays                        # 
+    │      ├── Energy                        # 
+    │      ├── Network                       # 
+    │      └── Tasks                         # 
+    ├── QTables                              # Q-Tables learned on each simulation scenario
+    ├── Simulation Previews                  # Example animations showing the simulator running in different scenarios
+    └── Simulations                          # Simulations results
+        ├── Simulation 1                     # Simulation 1 results
+        ├── ....                             
+        └── Simulation 10                    # Simulation 10 results
+           ├── Final results/Algorithms      # Graphs of each metric (same strcuture as "Average" folder)
+           └── simulation                    # Summary of the simulation run for each configuration
 
 
 # Experiment Setup
