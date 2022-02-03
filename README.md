@@ -14,23 +14,23 @@ A multi-layer guided reinforcement learning-based tasks offloading in edge compu
 
 
 # Folder Structure
-TODO
+The folder structure of the repository is organised as follows:
 
     .
     ├── Average                              # CSV data from all the simulations
     │   └── Final results/Algorithms         # Graphs of each metric calculated as the average of 10 simulations
-    │      ├── CPU Utilization               # 
-    │      ├── Delays                        # 
-    │      ├── Energy                        # 
-    │      ├── Network                       # 
-    │      └── Tasks                         # 
+    │      ├── CPU Utilization               # Average VM CPU usage per layer graphs
+    │      ├── Delays                        # Average waiting and execution time graphs
+    │      ├── Energy                        # Energy consumption graphs
+    │      ├── Network                       # Network usage graphs
+    │      └── Tasks                         # Graphs about executed and failed tasks
     ├── QTables                              # Q-Tables learned on each simulation scenario
     ├── Simulation Previews                  # Example animations showing the simulator running in different scenarios
     └── Simulations                          # Simulations results
         ├── Simulation 1                     # Simulation 1 results
         ├── ....                             
         └── Simulation 10                    # Simulation 10 results
-           ├── Final results/Algorithms      # Graphs of each metric (same strcuture as "Average" folder)
+           ├── Final results/Algorithms      # Graphs of each metric (same structure as "Average" folder)
            └── simulation                    # Summary of the simulation run for each configuration
 
 
