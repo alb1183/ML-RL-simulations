@@ -2,6 +2,7 @@
 A multi-layer guided reinforcement learning-based tasks offloading in edge computing - Simulations
 
 # Table of contents
+- [Experiment Setup](#experiment-setup)
 - [Metrics](#metrics)
 - [Compared Methods](#compared-methods)
 - [Preview of the simulations](#preview-of-the-simulations)
@@ -9,6 +10,37 @@ A multi-layer guided reinforcement learning-based tasks offloading in edge compu
   - [Local Reinforcement Learning algorithm](#local-reinforcement-learning-algorithm)
   - [Multi-Layer Reinforcement Learning algorithm](#multi-layer-reinforcement-learning-algorithm)
 - [Experimental Results and Analysis](#experimental-results-and-analysis)
+
+# Experiment Setup
+The evaluation has been performed on a modified version of PureEdgeSim edge computing simulator, the source code of our extension is available on TODO.
+We have improved the functionality of the simulator to meet our requirements, including new performance metrics and reinforcement learning algorithms.
+The simulator runs in a Java 1.8 environment and on a computer with an AMD Ryzen 9 5900X and 32GB of DDR4 RAM. 
+
+The simulated edge computing scenario consists of three layers of devices (edge-fog-cloud) randomly distributed over an area of 200x200 metres.
+To verify the scalability of the proposed algorithms, the number of edge devices in each simulation is increased by 10 until 200.
+Each simulation lasts 10 minutes and is executed 10 times per configuration to calculate the average result.
+The bandwidth of the connection between devices is 100 megabits per second at the edge and fog layers, while the connection to the cloud layer is 20 megabits per second.
+The maximum range of the wireless connection of the edge devices is 40 metres.
+
+TODO Arquitectura y Mapa
+
+The simulation parameters of the PureEdgeSim environment are summarised in the following table:
+
+TODO
+
+
+All devices with the exception of sensors have enough computing capacity to receive and process tasks, so sensors do not have the functionality to perform local offloading or to receive tasks from other devices.
+Among the edge devices only sensors and smartphones generate tasks in the system.
+The characteristics of the devices that compose the proposed three-layer architecture are: 
+
+TODO
+
+
+To test the behaviour of the offloading algorithms, three applications with specific latency and computational requirements are simulated. 
+The following table shows the percentage of usage on each device and the specifications of each application.
+
+TODO
+
 
 # Metrics
 In order to compare the performance of each algorithm we have defined the following benchmark metrics:
