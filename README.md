@@ -35,7 +35,7 @@ The folder structure of the repository is organised as follows:
 
 
 # Experiment Setup
-The evaluation has been performed on a modified version of [PureEdgeSim](https://github.com/CharafeddineMechalikh/PureEdgeSim) edge computing simulator, the source code of our extension is available on [GitHub](https://github.com/alb1183/PureEdgeSim).
+The evaluation has been performed on a modified version of [PureEdgeSim](https://github.com/CharafeddineMechalikh/PureEdgeSim) edge computing simulator, the source code of our extension is available on [GitHub](https://github.com/alb1183/ML-RL-PureEdgeSim).
 We have improved the functionality of the simulator to meet our requirements, including new performance metrics and reinforcement learning algorithms.
 The simulator runs in a Java 1.8 environment and on a computer with an AMD Ryzen 9 5900X and 32GB of DDR4 RAM. 
 
