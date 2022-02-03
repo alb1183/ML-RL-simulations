@@ -22,7 +22,9 @@ Each simulation lasts 10 minutes and is executed 10 times per configuration to c
 The bandwidth of the connection between devices is 100 megabits per second at the edge and fog layers, while the connection to the cloud layer is 20 megabits per second.
 The maximum range of the wireless connection of the edge devices is 40 metres.
 
-TODO Arquitectura y Mapa
+| Edge computing architecture | Simulation map example |
+|---|---|
+| ![Architecture](architecture.png) | ![Map](map.png) |
 
 The simulation parameters of the PureEdgeSim environment are summarised in the following table:
 
