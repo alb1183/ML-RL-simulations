@@ -2,6 +2,7 @@
 A multi-layer guided reinforcement learning-based tasks offloading in edge computing - Simulations
 
 # Table of contents
+- [Folder Structure](#folder-structure)
 - [Experiment Setup](#experiment-setup)
 - [Metrics](#metrics)
 - [Compared Methods](#compared-methods)
@@ -10,6 +11,28 @@ A multi-layer guided reinforcement learning-based tasks offloading in edge compu
   - [Local Reinforcement Learning algorithm](#local-reinforcement-learning-algorithm)
   - [Multi-Layer Reinforcement Learning algorithm](#multi-layer-reinforcement-learning-algorithm)
 - [Experimental Results and Analysis](#experimental-results-and-analysis)
+
+
+# Folder Structure
+TODO
+
+    .
+    ├── Average                              # TODO
+    │   └── Final results/Algorithms         # TODO
+    │      ├── CPU Utilization               # TODO
+    │      ├── Delays                        # TODO
+    │      ├── Energy                        # TODO
+    │      ├── Network                       # TODO
+    │      └── Tasks                         # TODO
+    ├── QTables                              # TODO
+    ├── Simulation Previews                  # TODO
+    └── Simulations                          # TODO
+        ├── Simulation 1                     # TODO
+        ├── ....                             # TODO
+        └── Simulation 10                    # TODO
+           ├── Final results/Algorithms      # TODO
+           └── simulation                    # TODO
+
 
 # Experiment Setup
 The evaluation has been performed on a modified version of [PureEdgeSim](https://github.com/CharafeddineMechalikh/PureEdgeSim) edge computing simulator, the source code of our extension is available on [GitHub](https://github.com/alb1183/PureEdgeSim).
