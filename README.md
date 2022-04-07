@@ -1,6 +1,11 @@
 # ML-RL-simulations
 A multi-layer guided reinforcement learning-based tasks offloading in edge computing - Simulations
 
+# Citation
+To cite, please use the following format: 
+
+-- We are waiting for a review to publish our paper about this results --
+
 # Table of contents
 - [Folder Structure](#folder-structure)
 - [Experiment Setup](#experiment-setup)
