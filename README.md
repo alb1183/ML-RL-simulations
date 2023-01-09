@@ -4,7 +4,14 @@ A multi-layer guided reinforcement learning-based tasks offloading in edge compu
 # Citation
 To cite, please use the following format: 
 
--- We are waiting for a review to publish our paper about this results --
+Alberto Robles-Enciso, Antonio F. Skarmeta,
+A multi-layer guided reinforcement learning-based tasks offloading in edge computing,
+Computer Networks, Volume 220, 2023, 109476, ISSN 1389-1286,
+https://doi.org/10.1016/j.comnet.2022.109476.
+(https://www.sciencedirect.com/science/article/pii/S1389128622005102)
+
+
+Robles-Enciso, A., Skarmeta, A.F. (2022). Task Offloading in Computing Continuum Using Collaborative Reinforcement Learning. In: González-Vidal, A., Mohamed Abdelgawad, A., Sabir, E., Ziegler, S., Ladid, L. (eds) Internet of Things. GIoTS 2022. Lecture Notes in Computer Science, vol 13533. Springer, Cham. https://doi.org/10.1007/978-3-031-20936-9_7
 
 # Table of contents
 - [Folder Structure](#folder-structure)
